@@ -1,0 +1,57 @@
+INFO:root:App started.
+02/18/2022 11:22:47 AM App started.
+02/18/2022 11:27:43 AM INFO App started.
+02/18/2022 11:28:07 AM INFO: App started.
+02/18/2022 11:28:30 AM INFO: App started.
+02/18/2022 12:32:00 PM INFO: Dhuhr time started at 12:32:00
+02/18/2022 12:37:00 PM INFO: Resuming after break.
+02/18/2022 03:24:00 PM INFO: Asr time started at 15:24:00
+02/18/2022 03:29:01 PM INFO: Resuming after break.
+02/18/2022 05:30:05 PM INFO: App started.
+02/18/2022 05:32:20 PM INFO: App started.
+02/18/2022 05:33:00 PM DEBUG: Starting new HTTP connection (1): api.aladhan.com:80
+02/18/2022 05:33:01 PM DEBUG: http://api.aladhan.com:80 "GET /v1/calendar?latitude=43.768585&longitude=-79.503355&month=02&year=2022&method=2&school=1 HTTP/1.1" 200 None
+02/18/2022 05:33:01 PM INFO: Time has been updated.
+02/18/2022 05:33:02 PM DEBUG: Starting new HTTP connection (1): api.aladhan.com:80
+02/18/2022 05:33:02 PM DEBUG: http://api.aladhan.com:80 "GET /v1/calendar?latitude=43.768585&longitude=-79.503355&month=02&year=2022&method=2&school=1 HTTP/1.1" 200 None
+02/18/2022 05:33:02 PM INFO: Time has been updated.
+02/18/2022 05:34:35 PM INFO: App started.
+02/18/2022 05:41:39 PM INFO: App started.
+02/18/2022 05:42:43 PM INFO: App started.
+02/18/2022 05:43:16 PM INFO: App started.
+02/18/2022 05:43:28 PM INFO: App started.
+02/18/2022 05:43:50 PM DEBUG: Starting new HTTP connection (1): api.aladhan.com:80
+02/18/2022 05:43:50 PM DEBUG: http://api.aladhan.com:80 "GET /v1/calendar?latitude=43.768585&longitude=-79.503355&month=02&year=2022&method=2&school=1 HTTP/1.1" 200 None
+02/18/2022 05:43:50 PM INFO: Time has been updated.
+02/18/2022 05:45:17 PM INFO: App started.
+02/18/2022 05:47:58 PM INFO: App started.
+02/18/2022 05:48:08 PM INFO: App started.
+02/18/2022 05:53:19 PM INFO: App started.
+02/18/2022 05:53:58 PM INFO: App started.
+02/18/2022 05:55:30 PM INFO: App started.
+02/18/2022 05:56:33 PM INFO: App started.
+02/18/2022 05:56:44 PM INFO: App started.
+02/18/2022 05:57:00 PM INFO: Maghrib time started at 17:57:00
+02/18/2022 05:59:11 PM INFO: App started.
+02/18/2022 07:12:00 PM INFO: Isha time started at 19:12:00
+02/18/2022 07:17:00 PM INFO: Resuming after break.
+02/18/2022 09:59:27 PM INFO: App started.
+02/18/2022 10:00:00 PM INFO: App started.
+02/18/2022 10:00:19 PM INFO: App started.
+02/18/2022 10:01:00 PM INFO: Fajr time started at 22:01:00
+02/18/2022 10:03:49 PM INFO: App started.
+02/18/2022 10:03:49 PM DEBUG: Starting new HTTP connection (1): api.aladhan.com:80
+02/18/2022 10:03:49 PM DEBUG: http://api.aladhan.com:80 "GET /v1/calendar?latitude=43.768585&longitude=-79.503355&month=02&year=2022&method=2&school=1 HTTP/1.1" 200 None
+02/18/2022 10:03:49 PM INFO: Time has been updated.
+02/18/2022 10:04:52 PM INFO: App started.
+02/18/2022 10:04:52 PM DEBUG: Starting new HTTP connection (1): api.aladhan.com:80
+02/18/2022 10:04:52 PM DEBUG: http://api.aladhan.com:80 "GET /v1/calendar?latitude=43.768585&longitude=-79.503355&month=02&year=2022&method=2&school=1 HTTP/1.1" 200 None
+02/18/2022 10:04:52 PM INFO: Time has been updated.
+02/18/2022 10:05:10 PM INFO: App started.
+02/18/2022 10:05:10 PM DEBUG: Starting new HTTP connection (1): api.aladhan.com:80
+02/18/2022 10:05:10 PM DEBUG: http://api.aladhan.com:80 "GET /v1/calendar?latitude=43.768585&longitude=-79.503355&month=02&year=2022&method=2&school=1 HTTP/1.1" 200 None
+02/18/2022 10:05:10 PM INFO: Time has been updated.
+02/18/2022 10:07:44 PM INFO: App started.
+02/18/2022 10:07:44 PM DEBUG: Starting new HTTP connection (1): api.aladhan.com:80
+02/18/2022 10:07:44 PM DEBUG: http://api.aladhan.com:80 "GET /v1/calendar?latitude=43.768585&longitude=-79.503355&month=02&year=2022&method=2&school=1 HTTP/1.1" 200 None
+02/18/2022 10:07:44 PM INFO: Time has been updated.
