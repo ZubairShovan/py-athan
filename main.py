@@ -108,31 +108,51 @@ while True:
             new_dict = a["timings"]
             # print(a["timings"])
 
+
     Fajr = new_dict['Fajr'].replace(" (EST)", ":00")
+    Fajr = new_dict['Fajr'].replace(" (EDT)", ":00")
     Fajr1 = new_dict['Fajr'].replace(" (EST)", ":01")
+    Fajr1 = new_dict['Fajr'].replace(" (EDT)", ":01")
     Fajr2 = new_dict['Fajr'].replace(" (EST)", ":02")
+    Fajr2 = new_dict['Fajr'].replace(" (EDT)", ":02")
 
     Sunrise = new_dict['Sunrise'].replace(" (EST)", ":00")
-    Sunrise1 = new_dict['Sunrise'].replace(" (EST)", ":00")
-    Sunrise2 = new_dict['Sunrise'].replace(" (EST)", ":00")
+    Sunrise = new_dict['Sunrise'].replace(" (EDT)", ":00")
+    Sunrise1 = new_dict['Sunrise'].replace(" (EST)", ":01")
+    Sunrise1 = new_dict['Sunrise'].replace(" (EDT)", ":01")
+    Sunrise2 = new_dict['Sunrise'].replace(" (EST)", ":02")
+    Sunrise2 = new_dict['Sunrise'].replace(" (EDT)", ":02")
 
-    Dhuhr = new_dict['Dhuhr'].replace(" (EST)", ":00")
-    Dhuhr1 = new_dict['Dhuhr'].replace(" (EST)", ":00")
-    Dhuhr2 = new_dict['Dhuhr'].replace(" (EST)", ":00")
+    Dhuhr = new_dict['Dhuhr'].replace(" (EST)", ":30")
+    Dhuhr = new_dict['Dhuhr'].replace(" (EDT)", ":30")
+    Dhuhr1 = new_dict['Dhuhr'].replace(" (EST)", ":31")
+    Dhuhr1 = new_dict['Dhuhr'].replace(" (EDT)", ":31")
+    Dhuhr2 = new_dict['Dhuhr'].replace(" (EST)", ":32")
+    Dhuhr2 = new_dict['Dhuhr'].replace(" (EDT)", ":32")
 
-    Asr = new_dict['Asr'].replace(" (EST)", ":00")
-    Asr1 = new_dict['Asr'].replace(" (EST)", ":00")
-    Asr2 = new_dict['Asr'].replace(" (EST)", ":00")
+    Asr = new_dict['Asr'].replace(" (EST)", ":30")
+    Asr = new_dict['Asr'].replace(" (EDT)", ":30")
+    Asr1 = new_dict['Asr'].replace(" (EST)", ":31")
+    Asr1 = new_dict['Asr'].replace(" (EDT)", ":32")
+    Asr2 = new_dict['Asr'].replace(" (EST)", ":33")
+    Asr2 = new_dict['Asr'].replace(" (EDT)", ":33")
 
     Sunset = new_dict['Sunset'].replace(" (EST)", ":00")
+    Sunset = new_dict['Sunset'].replace(" (EDT)", ":00")
 
-    Maghrib = new_dict['Maghrib'].replace(" (EST)", ":00")
-    Maghrib1 = new_dict['Maghrib'].replace(" (EST)", ":00")
-    Maghrib2 = new_dict['Maghrib'].replace(" (EST)", ":00")
+    Maghrib = new_dict['Maghrib'].replace(" (EST)", ":30")
+    Maghrib = new_dict['Maghrib'].replace(" (EDT)", ":30")
+    Maghrib1 = new_dict['Maghrib'].replace(" (EST)", ":31")
+    Maghrib1 = new_dict['Maghrib'].replace(" (EDT)", ":31")
+    Maghrib2 = new_dict['Maghrib'].replace(" (EST)", ":32")
+    Maghrib2 = new_dict['Maghrib'].replace(" (EDT)", ":32")
 
-    Isha = new_dict['Isha'].replace(" (EST)", ":00")
-    Isha1 = new_dict['Isha'].replace(" (EST)", ":00")
-    Isha2 = new_dict['Isha'].replace(" (EST)", ":00")
+    Isha = new_dict['Isha'].replace(" (EST)", ":30")
+    Isha = new_dict['Isha'].replace(" (EDT)", ":30")
+    Isha1 = new_dict['Isha'].replace(" (EST)", ":31")
+    Isha1 = new_dict['Isha'].replace(" (EDT)", ":31")
+    Isha2 = new_dict['Isha'].replace(" (EST)", ":32")
+    Isha2 = new_dict['Isha'].replace(" (EDT)", ":32")
 
     Imsak = new_dict['Imsak'].replace(" (EST)", ":00")
     Midnight = new_dict['Midnight'].replace(" (EST)", ":00")
@@ -140,6 +160,17 @@ while True:
 
     now = dt.datetime.now()
     current_time = now.strftime("%H:%M:%S")
+
+
+    a = dt.datetime.now()
+    b = a + dt.timedelta(minutes=4)  # days, seconds, then other fields.
+    c = a + dt.timedelta(minutes=2)  # days, seconds, then other fields.
+    e = a + dt.timedelta(minutes=1)  # days, seconds, then other fields.
+
+    later_time = b.strftime("%H:%M:%S")
+    later_time_2 = c.strftime("%H:%M:%S")
+    later_time_3 = e.strftime("%H:%M:%S")
+
     cls()
     print("Today is : " + d)
     print("Current Time is : ", current_time)
@@ -154,6 +185,14 @@ while True:
     if current_time in (Fajr, Fajr1, Fajr2):
         action(current_time, "Fajr", 5, True)
 
+    elif later_time in (Fajr, Fajr1, Fajr2):
+        print("4 minutes remain!")
+        playsound.playsound('Sounds/4 min.mp3')
+
+    elif later_time_2 in (Fajr, Fajr1, Fajr2):
+        print("2 minutes remain!")
+        playsound.playsound('Sounds/2 min.mp3')
+
     elif current_time in (Sunrise, Sunrise1, Sunrise2):
         print("It's " + current_time)
         print("Sunrise!")
@@ -164,6 +203,11 @@ while True:
 
     elif current_time in (Asr, Asr1, Asr2):
         action(current_time, "Asr", 5, False)
+
+    elif later_time_3 in (Maghrib, Maghrib1, Maghrib2):
+        print("It's " + current_time)
+        print("1 min to Maghrib!")
+        playsound.playsound('Sounds/Ding.mp3')
 
     elif current_time in (Maghrib, Maghrib1, Maghrib2):
         action(current_time, "Maghrib", 5, False)
